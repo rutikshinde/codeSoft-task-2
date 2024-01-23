@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutik - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(36, 36, 94);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(170, 170, 230);
+        font-size: 1.02rem;
+        ;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 125px 0;
+        height: 440px;
+    }
+
+    .firstSection>div {
+        width: 30%;
+    }
+
+    .leftSection {
+        font-size: 3rem;
+
+    }
+
+    .rightSection img {
+        width: 80%;
+    }
+
+    .text-gray {
+        color: gray;
+        font-size: 18px;
+    }
+
+    .purple {
+        color: blueviolet;
+    }
+
+    #element {
+        color: blueviolet;
+    }
+    .secondSection h2{
+        font-size: 3rem;
+    }
+    .secondSection {
+        max-width: 80vw;
+        /* width: auto; */
+        /* width: auto; */
+        margin: auto;
+        height: 65vh;
+    }
+
+    main hr {
+        border: 0;
+        background-color: rgb(38, 86, 146);
+        height: 2px;
+        margin: 40px 50px;
+    }
+
+    .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 143px 0;
+        display: flex;
+
+    }
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 1px 250px;
+    }
+
+    .image-top {
+        width: 90px;
+        height: 80px;
+        position: relative;
+        top: -71px;
+        left: -39px;
+    }
+
+    .vertical-tittle {
+        position: relative;
+        top: 16px;
+        left: -94px;
+        width: 180px;
+        font-size: 1.5rem;
+        margin: 12px;
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 23px;
+        left: -138px;
+        width: 320px;
+        font-size: 14px;
+    }
+    .download-resume {
+        padding: 100px 0;
+        margin: 12px 0;
+    }
+    .download-resume:hover {
+        transform: translateY(-5px);
+    }
+
+    .download-resume a {
+        text-decoration: none;
+        color: aliceblue;
+        border: orange 1px solid;
+        padding: 5px 20px;
+        border-radius: 12.2rem;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+    download-resume a :hover{
+        transform: translateY(-5px);
+    }
+    .download-resume a:hover {
+        /* color: rgb(169, 97, 24); */
+        background: #ff004f;
+        
+    }
+
+    .download-resume .span-contact {
+        /* display: flex; */
+        justify-content: space-between;
+        margin: 0 30px;
+        font-size: 1rem;
+    }
+
+    header .left b {
+        font-size: 2rem;
+        color: aliceblue;
+        letter-spacing: 5px;
+        margin: 0 -150px;
+        /* width: 60px; */
+    }
+
+    header .left b:hover {
+        color: rgb(192, 57, 23);
+    }
+
+    header .right {
+        margin: 0 100px;
+    }
+
+    .footer-text-center{
+        text-align: center;
+        background-color: rgb(36, 36, 94);
+        color: gray;
+        height: 60px;
+    }
+
+    @media(max-width: 1200px) {
+        
+        nav {
+            flex-direction: column;
+            height: 140px;
+        }
+        .firstSection{
+            flex-direction:column-reverse;
+            margin: 180px 8px 180px 0 ;
+        }
+        .box{
+            flex-direction: column;
+        }
+        .secondSection .vertical{
+            height:unset;
+            margin: 1px 150px;
+        }
+        
+        .secondSection .box{
+            width: 65vw;
+        }
+        .vertical-tittle, .vertical-desc{
+            left: 45px;
+        }
+        main{
+            height: 220vw;
+            }
+    
+        .leftSection{
+            padding:20px 0;
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .rightSection{
+            width: 400px !important;
+        }
+        .download-resume{
+            padding: 16px 0;
+            margin: -42px 0;
+        }
+        .secondSection{
+            height: 1200px;
+        }
+        .image-top {
+            
+            top: 116px;
+            left: -99px;
+        }
+}
+    
+
+
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <b>PORTFOLIO</b>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, I am <span class="purple">Rutik</span> </div>
+                <div> and I am a Passionate </div>
+                <!-- <div> Web Developer..!!</div> -->
+                <span id="element"></span>
+                <div class="download-resume">
+                    <span>
+                        <a target=none href=".pdf">Resume</a>
+                    </span>
+
+                    <span class="span-contact">
+                        <a href="#contact">Contact</a>
+                    </span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images\bg.png" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-gray">what I have done so far</span>
+            <h2>Work Experience</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images\cascode.png" alt="cascode">
+                    <img src="" alt="">
+                    <div class="vertical-tittle">
+                        <pre>Intern At CasCode </pre>
+                    </div>
+                    <div class="vertical-desc">CasCode, Virtual
+                        Jan 2023 - Feb 2023
+                        • Learn the basics of web technology
+                        HTML, CSS and Javascript.
+                        • A basic web technology project has been developed.
+                        • Replicated the E-commerce Websites.
+                        • Servlet, JSP and PHP basics are also learned</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images\techtitans.png" alt="cascode">
+                    <img src="" alt="">
+                    <div class="vertical-tittle">
+                        <pre>Team Tech_Titans </pre>
+                    </div>
+                    <div class="vertical-desc">PVPIT Robotics Lab(Team Tech Titans), Pune, Pune
+                        Dec 2021 - Dec 2022
+                        Learnt Arduino, microcontrollers, Sensors, C programming,
+                        Python Programming, basics of ROS, basics of MATLAB.
+                        Built base drives, prototypes,task preforming robots and line follower bots.
+                        Leadership, Teamwork, Communication,Presentation skills.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images\fuel.png" alt="cascode">
+                    <img src="" alt="">
+                    <div class="vertical-tittle">
+                        <pre>Intern At FUEL</pre>
+                    </div>
+                    <div class="vertical-desc">Fuel, Pune
+                        Jan 2023 - Feb 2023
+                        • Learnt core and advanced Java.
+                        • Built Quiz Application.
+                        • Built Number Guess Application.</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                        officia, alias vitae fugiat fuga exercitationem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                        officia, alias vitae fugiat fuga exercitationem.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                        officia, alias vitae fugiat fuga exercitationem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h2>Music App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shopping App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> shindepratik1663@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 8554823508</p>
+                    <div class="social-icons">
+                        <a target=none href="https://github.com/rutikshinde"><i class="fa-brands fa-github"></i></a>
+                        <a target=none href="https://wa.me/917666214024?"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a target=none href="#"><i class="fab fa-instagram"></i></a>
+                        <a target=none href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href=".pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name"id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" id="textarea1" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3" onclick="gotowhatsapp()">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text-center">
+            Copyright &copy;Rutiksportfolio.com || All rights reserved.
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer', 'Software Engineer', '&amp; a video Editor.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        function gotowhatsapp() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var textarea11 = document.getElementById("textarea1").value;
+
+            var url = "https://wa.me/918554823508?text="
+                + "Name: " + name + "%0a"
+                + "Email: " + email + "%0a"
+                + "Service: " + textarea11;
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+
+</html>
